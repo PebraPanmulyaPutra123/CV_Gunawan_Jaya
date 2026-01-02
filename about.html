@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <title>CV Gunawan Jaya | Tentang Kami</title>
 
-    <meta name="description"
-        content="Tentang kami dan Sejarah CV Gunawan Jaya">
+    <meta name="description" content="Tentang kami dan Sejarah CV Gunawan Jaya">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -70,92 +71,92 @@
         </div>
     </nav>
 
-<!-- Tentang Kami -->
-<section class="about-section py-5">
-    <div class="container">
+    <!-- Tentang Kami -->
+    <section class="about-section py-5">
+        <div class="container">
 
-        <!-- Judul -->
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-white">Tentang Kami</h2>
-            <p class="text-light opacity-75">
-                Mengenal lebih dekat CV Gunawan Jaya
-            </p>
-        </div>
+            <!-- Judul -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-white">Tentang Kami</h2>
+                <p class="text-light opacity-75">
+                    Mengenal lebih dekat CV Gunawan Jaya
+                </p>
+            </div>
 
-        <div class="row align-items-center g-5">
+            <div class="row align-items-center g-5">
 
-            <!-- Konten Teks -->
-            <div class="col-md-6">
-                <div class="about-card p-4 p-lg-5">
+                <!-- Konten Teks -->
+                <div class="col-md-6">
+                    <div class="about-card p-4 p-lg-5">
 
-                    <h4 class="fw-bold mb-3">
-                        CV Gunawan Jaya
-                    </h4>
+                        <h4 class="fw-bold mb-3">
+                            CV Gunawan Jaya
+                        </h4>
 
-                    <p>
-                        <strong>CV Gunawan Jaya</strong> adalah perusahaan yang bergerak
-                        di bidang produksi kawat industri, melayani kebutuhan
-                        konstruksi, manufaktur, dan sektor industri pendukung lainnya.
-                    </p>
+                        <p>
+                            <strong>CV Gunawan Jaya</strong> adalah perusahaan yang bergerak
+                            di bidang produksi kawat industri, melayani kebutuhan
+                            konstruksi, manufaktur, dan sektor industri pendukung lainnya.
+                        </p>
 
-                    <p>
-                        Dengan tenaga kerja berpengalaman serta proses produksi yang
-                        terkontrol, kami berkomitmen menjaga kualitas, ketepatan ukuran,
-                        dan konsistensi hasil produksi.
-                    </p>
+                        <p>
+                            Dengan tenaga kerja berpengalaman serta proses produksi yang
+                            terkontrol, kami berkomitmen menjaga kualitas, ketepatan ukuran,
+                            dan konsistensi hasil produksi.
+                        </p>
 
-                    <!-- Keunggulan -->
-                    <div class="row mt-4">
-                        <div class="col-12 mb-2">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            Kualitas Terjaga
+                        <!-- Keunggulan -->
+                        <div class="row mt-4">
+                            <div class="col-12 mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Kualitas Terjaga
+                            </div>
+                            <div class="col-12 mb-2">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Produksi Konsisten
+                            </div>
+                            <div class="col-12">
+                                <i class="bi bi-check-circle-fill text-success me-2"></i>
+                                Custom Spesifikasi
+                            </div>
                         </div>
-                        <div class="col-12 mb-2">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            Produksi Konsisten
-                        </div>
-                        <div class="col-12">
-                            <i class="bi bi-check-circle-fill text-success me-2"></i>
-                            Custom Spesifikasi
-                        </div>
+
                     </div>
-
                 </div>
-            </div>
 
-            <!-- Gambar -->
-            <div class="col-md-6 text-center">
-                <img src="assets/images/pria-kontruksi.png"
-                     class="about-img img-fluid"
-                     alt="Tentang CV Gunawan Jaya">
-            </div>
+                <!-- Gambar -->
+                <div class="col-md-6 text-center">
+                    <img src="assets/images/pria-kontruksi.png" class="about-img img-fluid"
+                        alt="Tentang CV Gunawan Jaya">
+                </div>
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
-<footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">
-        &copy; 2025 CV Gunawan Jaya
-    </p>
-</footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <p class="mb-0">
+            &copy; 2025 CV Gunawan Jaya
+        </p>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-  const currentLocation = location.pathname.split("/").pop();
-  const menuItems = document.querySelectorAll(".nav-link");
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const currentLocation = location.pathname.split("/").pop();
+        const menuItems = document.querySelectorAll(".nav-link");
 
-  menuItems.forEach(link => {
-    const linkPage = link.getAttribute("href");
+        menuItems.forEach(link => {
+            const linkPage = link.getAttribute("href");
 
-    if (linkPage === currentLocation || 
-        (currentLocation === "" && linkPage === "index.html")) {
-      link.classList.add("active");
-    }
-  });
-</script>
+            if (linkPage === currentLocation ||
+                (currentLocation === "" && linkPage === "index.html")) {
+                link.classList.add("active");
+            }
+        });
+    </script>
 
 </body>
+
 </html>

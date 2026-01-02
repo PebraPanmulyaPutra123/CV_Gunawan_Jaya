@@ -10,6 +10,12 @@
     );
 }
 
+@media (max-width: 576px) {
+  h1 { font-size: 1.8rem; }
+  h2 { font-size: 1.4rem; }
+  p  { font-size: 0.95rem; }
+}
+
 
 /* Section Hero */
 .hero-title {
@@ -138,10 +144,10 @@
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     .product-img-wrapper {
-        width: 100%;
-        height: 200px;
+        height: 100px;
+        
     }
 }
 
@@ -260,6 +266,15 @@ section {
     width: 32px;
     /* WAJIB supaya benar-benar bulat */
     border-radius: 50%;
+}
+.navbar-logo {
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 26px;
+  }
 }
 
 

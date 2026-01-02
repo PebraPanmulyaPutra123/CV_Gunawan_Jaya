@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <title>CV Gunawan Jaya | Kontak</title>
 
-    <meta name="description"
-        content="Kalian bisa atau menghubungi kami lewat nomor di bawah.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <meta name="description" content="Kalian bisa atau menghubungi kami lewat nomor di bawah.">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
 
@@ -157,19 +157,38 @@
 
     <!-- Bootstrap JS -->
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script>
-  const currentLocation = location.pathname.split("/").pop();
-  const menuItems = document.querySelectorAll(".nav-link");
+    <script>
+        const currentLocation = location.pathname.split("/").pop();
+        const menuItems = document.querySelectorAll(".nav-link");
 
-  menuItems.forEach(link => {
-    const linkPage = link.getAttribute("href");
+        menuItems.forEach(link => {
+            const linkPage = link.getAttribute("href");
 
-    if (linkPage === currentLocation || 
-        (currentLocation === "" && linkPage === "index.html")) {
-      link.classList.add("active");
-    }
-  });
-</script>
+            if (linkPage === currentLocation ||
+                (currentLocation === "" && linkPage === "index.html")) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            const nama = document.getElementById("nama").value;
+            const email = document.getElementById("email").value;
+            const pesan = document.getElementById("pesan").value;
+
+            const nomorWA = "081290325201"; // ganti nomor WA CV
+            const text = `Halo CV Gunawan Jaya,%0A
+Nama: ${nama}%0A
+Email: ${email}%0A
+Pesan: ${pesan}`;
+
+            window.open(`https://wa.me/${nomorWA}?text=${text}`, "_blank");
+        });
+    </script>
+
 
 </body>
 
