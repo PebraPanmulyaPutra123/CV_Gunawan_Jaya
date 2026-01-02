@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV Gunawan Jaya | Galeri</title>
+
+    <meta name="description"
+        content="Galeri dokumentasi proses produksi kawat di CV Gunawan Jaya">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm bg-dark">
+        <div class="container">
+
+            <!-- Logo / Nama CV -->
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+
+                <img src="assets/images/logocv.png" alt="Logo CV Gunawan Jaya" class="navbar-logo">
+
+                <span>CV Gunawan Jaya</span>
+            </a>
+
+            <!-- Toggle Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- PRODUK -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+
+                    <!-- GALERI -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+
+                    <!-- KONTAK -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<section class="galeri-header text-center">
+    <div class="container">
+        <h1 class="fw-bold">Galeri Produksi</h1>
+        <p class="text-muted mt-2">
+            Dokumentasi proses produksi dan hasil kawat CV Gunawan Jaya
+        </p>
+    </div>
+</section>
+
+<section class="galeri-section">
+    <div class="container">
+        <div class="row g-4">
+
+            <!-- GALERI ITEM -->
+            <div class="col-md-4">
+                <div class="card galeri-card h-100 shadow-sm">
+                    <div class="galeri-img-wrapper">
+                        <img src="assets/images/galeri/produksi-kawat-1.png"
+                             alt="Proses Produksi Kawat">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold mb-2">Proses Produksi</h6>
+                        <p class="text-muted small mb-0">
+                            Tahapan pembuatan kawat dengan mesin industri.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERI ITEM -->
+            <div class="col-md-4">
+                <div class="card galeri-card h-100 shadow-sm">
+                    <div class="galeri-img-wrapper">
+                        <img src="assets/images/galeri/produksi-kawat-2.png"
+                             alt="Gudang Kawat">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold mb-2">Gudang Produksi</h6>
+                        <p class="text-muted small mb-0">
+                            Penyimpanan kawat siap distribusi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERI ITEM -->
+            <div class="col-md-4">
+                <div class="card galeri-card h-100 shadow-sm">
+                    <div class="galeri-img-wrapper">
+                        <img src="assets/images/galeri/produksi-kawat-3.png"
+                             alt="Hasil Produksi">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold mb-2">Mesin Produksi</h6>
+                        <p class="text-muted small mb-0">
+                            Mesin Produksi untuk membuat dan mengolah kawat
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GALERI ITEM -->
+            <div class="col-md-4">
+                <div class="card galeri-card h-100 shadow-sm">
+                    <div class="galeri-img-wrapper">
+                        <img src="assets/images/galeri/produksi-kawat-4.png"
+                             alt="Bahan Mentah Kawat">
+                    </div>
+
+                    <div class="card-body text-center">
+                        <h6 class="fw-bold mb-2">Bahan Mentah Kawat</h6>
+                        <p class="text-muted small mb-0">
+                            Bentuk atau wujud bahan mentah yang siap diolah
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+        &copy; 2025 CV Gunawan Jaya
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  const currentLocation = location.pathname.split("/").pop();
+  const menuItems = document.querySelectorAll(".nav-link");
+
+  menuItems.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentLocation || 
+        (currentLocation === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>

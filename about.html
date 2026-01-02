@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV Gunawan Jaya | Tentang Kami</title>
+
+    <meta name="description"
+        content="Tentang kami dan Sejarah CV Gunawan Jaya">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-sm bg-dark">
+        <div class="container">
+
+            <!-- Logo / Nama CV -->
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+
+                <img src="assets/images/logocv.png" alt="Logo CV Gunawan Jaya" class="navbar-logo">
+
+                <span>CV Gunawan Jaya</span>
+            </a>
+
+            <!-- Toggle Mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <!-- HOME -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+
+                    <!-- PRODUK -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="produk.html">Produk</a>
+                    </li>
+
+                    <!-- GALERI -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">Galeri</a>
+                    </li>
+
+                    <!-- ABOUT -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Tentang Kami</a>
+                    </li>
+
+                    <!-- KONTAK -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="kontak.html">Kontak</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Tentang Kami -->
+<section class="about-section py-5">
+    <div class="container">
+
+        <!-- Judul -->
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-white">Tentang Kami</h2>
+            <p class="text-light opacity-75">
+                Mengenal lebih dekat CV Gunawan Jaya
+            </p>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <!-- Konten Teks -->
+            <div class="col-md-6">
+                <div class="about-card p-4 p-lg-5">
+
+                    <h4 class="fw-bold mb-3">
+                        CV Gunawan Jaya
+                    </h4>
+
+                    <p>
+                        <strong>CV Gunawan Jaya</strong> adalah perusahaan yang bergerak
+                        di bidang produksi kawat industri, melayani kebutuhan
+                        konstruksi, manufaktur, dan sektor industri pendukung lainnya.
+                    </p>
+
+                    <p>
+                        Dengan tenaga kerja berpengalaman serta proses produksi yang
+                        terkontrol, kami berkomitmen menjaga kualitas, ketepatan ukuran,
+                        dan konsistensi hasil produksi.
+                    </p>
+
+                    <!-- Keunggulan -->
+                    <div class="row mt-4">
+                        <div class="col-12 mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Kualitas Terjaga
+                        </div>
+                        <div class="col-12 mb-2">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Produksi Konsisten
+                        </div>
+                        <div class="col-12">
+                            <i class="bi bi-check-circle-fill text-success me-2"></i>
+                            Custom Spesifikasi
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Gambar -->
+            <div class="col-md-6 text-center">
+                <img src="assets/images/pria-kontruksi.png"
+                     class="about-img img-fluid"
+                     alt="Tentang CV Gunawan Jaya">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">
+        &copy; 2025 CV Gunawan Jaya
+    </p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+  const currentLocation = location.pathname.split("/").pop();
+  const menuItems = document.querySelectorAll(".nav-link");
+
+  menuItems.forEach(link => {
+    const linkPage = link.getAttribute("href");
+
+    if (linkPage === currentLocation || 
+        (currentLocation === "" && linkPage === "index.html")) {
+      link.classList.add("active");
+    }
+  });
+</script>
+
+</body>
+</html>
